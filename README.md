@@ -21,7 +21,7 @@
 | `WORKFLOW.md` | 团队协作工作流（人类阅读） | ✅ 已创建 |
 | `small-car-实验映射表.md` | abot_arm_learning 实验 → small-car 源码路径映射 | ✅ 已创建 |
 | `parallel/` | 独立子任务 spec（E01-E32）+ 合并 spec（P*） | ✅ 20 个文件 |
-| `notes/` | 学习日志（E01-E06）+ 详细笔记（E03-E09） | ✅ 14 个文件 |
+| `notes/` | 学习日志（E01-E06）+ 详细笔记（E03-E09）+ Go2 补充 | ✅ 14 个文件 |
 | `cheatsheets/` | 速查表（启动链路 / TF tree / launch 索引） | ✅ 已填充 |
 | `.github/` | Issue 模板（bug 报告 + 任务分配） | ✅ 已创建 |
 
@@ -80,8 +80,14 @@
 | `E31-实时目标检测.md` | 执行 spec（YOLO ROS 部署，≥15FPS） |
 | `E32-ROS视觉伺服通信.md` | 执行 spec（Phase 4 出口：检测→3D→IK→抓取闭环） |
 
-### Phase 5-6 · 待规划
-Phase 5（SCI 联动茶园采摘）和 Phase 6（陆空协同方案）spec 将根据 Phase 4 出口成果编写。
+### Phase 5-6 · SCI 联动 + 陆空协同
+
+| 文件 | 定位 |
+|---|---|
+| Phase 5 | SCI 联动茶园采摘（P5-01~P5-03，任务已定义，spec 待 Phase 4 出口后编写） |
+| Phase 6 | 陆空协同方案（P6-01，spec 待 Phase 5 完成后编写） |
+
+> Phase 5-6 任务编号已在 `PROGRESS.md` 中定义，具体执行 spec 将根据 Phase 4 出口成果编写。
 
 ## 与 SCI 茶园采摘课题的映射
 

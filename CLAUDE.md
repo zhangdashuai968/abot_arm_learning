@@ -30,8 +30,11 @@
 | `parallel/` | 实验 spec（执行指南，含关键问题+步骤+验收） |
 | `notes/` | 学习日志 + 详细笔记 |
 | `cheatsheets/` | 速查表（启动链路 / TF tree / launch 索引） |
+| `images/` | DH 坐标系图 |
 | `small-car-实验映射表.md` | 实验 → small-car 真机源码路径映射 |
 | `WORKFLOW.md` | 团队协作工作流（人类阅读） |
+| `CLAUDE.md` | 本文件（AI 助手规则） |
+| `.github/` | Issue 模板 |
 
 ## 做实验时的流程
 

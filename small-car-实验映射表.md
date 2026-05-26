@@ -61,9 +61,9 @@
 | 定位 | `src/abot_project/abot/launch/amcl.launch` | AMCL 自适应蒙特卡洛定位 |
 | 底盘 | `src/abot_project/abot/launch/bringup.launch` | 底盘 + 里程计 + EKF |
 | 地图 | `src/abot_project/abot/maps/` | house.yaml / my1_map.yaml |
-| 测试脚本 | `src/abot_project/abot/script/abot_patrol_nav.py` | 巡逻导航脚本 |
-| | `../scripts/nav_test.py` | 前进 1m 测试 |
-| | `../scripts/rotate_test.py` | 旋转 90° 测试 |
+| 测试脚本 | `scripts/nav_test.py` | 前进 1m 测试 |
+| | `scripts/rotate_test.py` | 旋转 90° 测试 |
+| | `scripts/patrol_run.sh` | 巡逻导航启动 |
 
 ---
 
