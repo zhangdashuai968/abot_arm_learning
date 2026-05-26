@@ -6,16 +6,60 @@
 
 ---
 
-## 两个仓库的关系
+## 两个仓库的定位
 
-| | abot_arm_learning | small-car |
-|---|---|---|
-| 角色 | 课堂（学原理、做实验、记笔记） | 战场（真机部署、跑航线、调试） |
-| 位置 | 你的电脑 | Jetson Nano（`192.168.36.46`） |
-| AI 规则 | `CLAUDE.md` | `CLAUDE.md` |
-| 协作指南 | `WORKFLOW.md`（本文件） | 引用本文件 |
+### 一句话
 
-> **一句话**：学在 abot_arm_learning，练在 small-car。
+| 仓库 | 是什么 | 在哪个机器上 |
+|------|--------|-------------|
+| `abot_arm_learning` | 课本 + 笔记本 | **你的电脑** |
+| `small-car` | 兵器库 + 航海日志 | **Jetson Nano 小车** (`192.168.36.46`) |
+
+### 什么东西放哪个仓库
+
+| 内容 | 放哪里 | 说明 |
+|------|--------|------|
+| 实验 spec（执行指南） | `abot_arm_learning/parallel/` | 做实验前阅读，告诉你步骤和验收标准 |
+| 学习日志 | `abot_arm_learning/notes/EXX学习日志.md` | 学完实验后写：学到了什么 |
+| 调试日志 | `abot_arm_learning/logs/` | 涉及具体实验的调试过程，用模板格式 |
+| 进度追踪 | `abot_arm_learning/PROGRESS.md` | 勾选实验完成状态 |
+| ROS 源码 | `small-car/src/` | launch 文件、C++/Python 节点 |
+| 运行脚本 | `small-car/scripts/` | 航线、导航测试、地图 |
+| 真机调试记录 | `small-car/小车调节日志.txt` | 在车上调参时的随手记录 |
+| 踩坑记录 | `small-car/TROUBLESHOOTING.md` | 遇到 bug 及解法，全队共享 |
+| 会话报告 | `small-car/reports/` | 每次真机操作后的报告（人工 + AI） |
+
+### 一个具体例子：小郭做 E23（Cartographer 融合建图）
+
+```
+[在自己电脑上]
+1. cd abot_arm_learning
+2. git pull                                    # 拉取最新 spec
+3. 读 parallel/E23-Cartographer融合建图.md     # 理解目标、关键问题
+4. 打开 Claude Code，AI 帮你理解 Cartographer 原理
+5. 写预习笔记到 notes/（可选）
+
+[SSH 到小车上]
+6. ssh abot@192.168.36.46
+7. cd ~/robot_ws && git pull                   # 拉取最新代码
+8. 对照 small-car-实验映射表.md，找到 cartographer_slam.launch
+9. 打开 Claude Code（在 small-car 目录），AI 帮你改参数
+10. roslaunch abot bringup.launch
+11. roslaunch abot slam/cartographer_slam.launch
+12. 测试、调参，随手记到 小车调节日志.txt
+13. auto-sync.sh 自动 commit + push 代码变更到 GitHub
+
+[回到自己电脑上]
+14. cd abot_arm_learning
+15. 写学习日志 notes/E23学习日志.md
+16. 更新 PROGRESS.md：E23 ⬜ → ✅
+17. git commit + push
+
+[在 small-car 仓库]
+18. 写会话报告 reports/2026-05-27_小郭_E23_Cartographer调优.md      # 人工版
+19. 写会话报告 reports/2026-05-27_小郭_E23_Cartographer调优_AI.md   # AI版
+20. git commit + push
+```
 
 ---
 
