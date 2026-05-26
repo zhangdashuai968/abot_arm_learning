@@ -1,17 +1,18 @@
 # CLAUDE.md — ABOT 机械臂车学习路线仓库
 
-## 定位（这个仓库装什么、不装什么）
+## 定位
 
-| | 装 | 不装 |
+**这个仓库只做一件事：基础知识学习。不做调试、不存真机日志。**
+
+| | 装（学习） | 不装（实战） |
 |---|---|---|
 | ✅ | 实验 spec（`parallel/`） | ROS 源码、launch 文件 |
-| ✅ | 学习日志 + 详细笔记（`notes/`） | 真机配置文件 |
-| ✅ | 调试 / 调优日志（`logs/`） | 脚本、航线、地图 |
-| ✅ | 进度追踪（`PROGRESS.md`） | 会话报告 |
-| ✅ | 速查表（`cheatsheets/`） | |
-| ✅ | 实验→源码映射（`small-car-实验映射表.md`） | |
+| ✅ | 学习日志 + 详细笔记（`notes/`） | 真机调试日志 |
+| ✅ | 进度追踪（`PROGRESS.md`） | 真机会话报告 |
+| ✅ | 速查表（`cheatsheets/`） | 脚本、航线、地图 |
+| ✅ | 实验→源码映射（`small-car-实验映射表.md`） | 踩坑手册 |
 
-> **一句话**：这个仓库是"课本 + 笔记本"。真机代码在 [small-car](https://github.com/zhangdashuai968/small-car)，会话报告也在 small-car 的 `reports/`。
+> **一句话**：这个仓库是"课本 + 笔记本"。真机调试、日志、报告全在 [small-car](https://github.com/zhangdashuai968/small-car)。
 
 ## 身份认知
 
@@ -26,9 +27,8 @@
 |------|------|
 | `roadmap.md` | 6 阶段总路线图 |
 | `PROGRESS.md` | 全部实验完成状态追踪（⬜/🔄/✅） |
-| `parallel/` | 独立子任务 spec（执行指南，含关键问题+步骤+验收） |
+| `parallel/` | 实验 spec（执行指南，含关键问题+步骤+验收） |
 | `notes/` | 学习日志 + 详细笔记 |
-| `logs/` | 调试 / 跑通 / 调优日志 |
 | `cheatsheets/` | 速查表（启动链路 / TF tree / launch 索引） |
 | `small-car-实验映射表.md` | 实验 → small-car 真机源码路径映射 |
 | `WORKFLOW.md` | 团队协作工作流（人类阅读） |
@@ -53,13 +53,13 @@
 
 - 学习日志：`notes/EXX学习日志.md`，格式参考已有文件（学习目标 → 关键问题 → 操作记录 → 知识点 → 收获 → 待解决）
 - 详细笔记：`notes/EXX-描述.md`，深入某个主题的补充材料
-- 调试日志：`logs/YYYY-MM-DD_实验编号_简述.md`，使用 `logs/2026-05-26_模板_调试日志.md` 模板
 - 文件名中实验编号固定两位数字（E01 而非 E1）
+- 调试日志不放在本仓库——真机调试日志去 small-car 的 `logs/` 写
 
 ## Git 纪律
 
-- 每次学习会话结束必须 commit 笔记和日志
-- Commit message 格式：`docs: EXX 学习日志 — 执行人` 或 `log: EXX 调试日志 — 简述`
+- 每次学习会话结束必须 commit 笔记
+- Commit message 格式：`docs: EXX 学习日志 — 执行人`
 - 会话开始前提醒队友 `git pull`
 - 不要修改他人的学习日志（协作实验除外）
 
