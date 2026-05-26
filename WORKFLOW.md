@@ -23,7 +23,7 @@
 | 学习日志 | `abot_arm_learning/notes/` | 学完实验后写：学到了什么知识点 |
 | 进度追踪 | `abot_arm_learning/PROGRESS.md` | 勾选实验完成状态 |
 | 速查表 | `abot_arm_learning/cheatsheets/` | 启动链路、TF tree、launch 索引 |
-| 实验→源码映射 | `abot_arm_learning/small-car-实验映射表.md` | 实验对应 small-car 哪个源文件 |
+| 实验→源码映射 | `abot_arm_learning/cheatsheets/small-car-实验映射表.md` | 实验对应 small-car 哪个源文件 |
 | ROS 源码 | `small-car/src/` | launch 文件、C++/Python 节点 |
 | 运行脚本、航线、地图 | `small-car/scripts/` | |
 | 真机调试日志 | `small-car/logs/` | 结构化调试日志，有模板 |
@@ -44,7 +44,7 @@
 [SSH 到小车上]
 6. ssh abot@192.168.36.46
 7. cd ~/robot_ws && git pull                   # 拉取最新代码
-8. 对照 small-car-实验映射表.md，找到 cartographer_slam.launch
+8. 对照 cheatsheets/small-car-实验映射表.md，找到 cartographer_slam.launch
 9. 打开 Claude Code（在 small-car 目录），AI 帮你改参数
 10. roslaunch abot bringup.launch
 11. roslaunch abot slam/cartographer_slam.launch
@@ -78,7 +78,7 @@
 ### 进行中
 
 1. 先阅读 `parallel/EXX-*.md` 理解实验 spec
-2. 对照 `small-car-实验映射表.md` 找到对应源码路径
+2. 对照 `cheatsheets/small-car-实验映射表.md` 找到对应源码路径
 3. 在真机上操作，实时记录日志
 4. **每完成一个步骤就 git commit + push**（不要攒到最后）
 5. 遇到问题先查 small-car 的 `TROUBLESHOOTING.md`

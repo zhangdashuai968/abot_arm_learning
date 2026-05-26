@@ -19,10 +19,10 @@
 | `PROGRESS.md` | 全部实验完成状态追踪（⬜/🔄/✅）、日期、执行人 | ✅ 已创建 |
 | `CLAUDE.md` | AI 助手规则（Claude Code 启动时自动读取） | ✅ 已创建 |
 | `WORKFLOW.md` | 团队协作工作流（人类阅读） | ✅ 已创建 |
-| `small-car-实验映射表.md` | abot_arm_learning 实验 → small-car 源码路径映射 | ✅ 已创建 |
+| `small-car-实验映射表.md` | abot_arm_learning 实验 → small-car 源码路径映射 | 已移至 `cheatsheets/` |
 | `parallel/` | 独立子任务 spec（E01-E32）+ 合并 spec（P*） | ✅ 20 个文件 |
 | `notes/` | 学习日志（E01-E06）+ 详细笔记（E03-E09） | ✅ 13 个文件 |
-| `cheatsheets/` | 速查表（启动链路 / TF tree / launch 索引） | ✅ 已填充 |
+| `cheatsheets/` | 速查表（启动链路 / TF tree / launch 索引 / 实验映射） | ✅ 已填充 |
 | `.github/` | Issue 模板（bug 报告 + 任务分配） | ✅ 已创建 |
 
 > 真机调试日志、会话报告、ROS 源码 → 去 [small-car](https://github.com/zhangdashuai968/small-car)
@@ -37,7 +37,7 @@
 - [x] 启动链路 cheatsheet 雏形（`cheatsheets/启动链路.md`）
 - [x] TF tree 图（`cheatsheets/TF-tree.md`）
 - [x] launch 索引（`cheatsheets/launch索引.md`）
-- [x] small-car 映射表（`small-car-实验映射表.md`）
+- [x] small-car 映射表（`cheatsheets/small-car-实验映射表.md`）
 - [x] 进度追踪表（`PROGRESS.md`）
 
 ## parallel/ 文件清单
