@@ -1,0 +1,27 @@
+# Claude Code / Qwen 本地配置
+.claude/
+.qwen/
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/
+
+# 系统文件
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+
+# 临时文件
+*.tmp
+*.bak
+*~

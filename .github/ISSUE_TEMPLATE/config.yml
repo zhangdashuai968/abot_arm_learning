@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 查看协作工作流
+    url: https://github.com/zhangdashuai968/abot_arm_learning/blob/main/WORKFLOW.md
+    about: 在创建 Issue 前，先阅读团队协作工作流
+  - name: 查看学习路线
+    url: https://github.com/zhangdashuai968/abot_arm_learning/blob/main/roadmap.md
+    about: 6 阶段学习路线总览
