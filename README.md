@@ -16,7 +16,6 @@
 | 目录 | 用途 | 状态 |
 |---|---|---|
 | `docs/roadmap.md` | 6 阶段总路线图，每阶段目标 / 产出 / 验收 | ✅ 已就绪 |
-| `docs/PROGRESS.md` | 全部实验完成状态追踪（⬜/🔄/✅）、日期、执行人 | ✅ 已创建 |
 | `docs/ARCHITECTURE.md` | 系统软件架构（节点拓扑+TF树+数据流+坐标系） | ✅ 已创建 |
 | `docs/glossary.md` | 术语表（ROS/机器人学/SLAM/视觉/硬件） | ✅ 已创建 |
 | `docs/WORKFLOW.md` | 跨仓库协作工作流（人类阅读） | ✅ 已创建 |
@@ -24,24 +23,24 @@
 | `CLAUDE.md` | AI 助手规则（Claude Code 启动时自动读取） | ✅ 已创建 |
 | `CONTRIBUTING.md` | 协作约定（Git 流程/文档规范/commit 格式） | ✅ 已创建 |
 | `parallel/` | 独立子任务 spec（E01-E32）+ 合并 spec（P*） | ✅ 20 个文件 |
-| `notes/` | 学习日志（E01-E06）+ 详细笔记（E03-E09）+ README | ✅ 14 个文件 |
+| `notes/` | 学习日志 + 详细笔记（队员自行撰写，模板见 notes/README.md） | ✅ 已就绪 |
 | `cheatsheets/` | 速查表（启动链路 / TF tree / launch 索引 / 实验映射） | ✅ 已填充 |
 | `.github/` | Issue 模板（bug 报告 + 任务分配） | ✅ 已创建 |
 
 > 真机调试日志、会话报告、ROS 源码 → 去 [small-car](https://github.com/zhangdashuai968/small-car)
+> 学习进度追踪 → [morning-newspaper](https://github.com/zhangdashuai968/morning-newspaper) 的 `data/progress_data.py`，早报自动同步
 
 ## 当前位置
 
 **Phase 1 ✅ 已完成** | Phase 2 ⬜ 待启动
 
-- [x] E01 本体组成与认知（`parallel/E01-本体组成与认知.md` + `notes/E01学习日志.md`）
-- [x] E02 系统组成与认知（`parallel/E02-系统组成与认知.md` + `notes/E02学习日志.md`）
-- [x] E03-E09 ROS 基础 7 件套（统一 spec：`parallel/P1-03-ROS基础7件套.md`；逐实验详细笔记：`notes/E03-E09` 系列）
+- [x] E01 本体组成与认知
+- [x] E02 系统组成与认知
+- [x] E03-E09 ROS 基础 7 件套（统一 spec：`parallel/P1-03-ROS基础7件套.md`）
 - [x] 启动链路 cheatsheet 雏形（`cheatsheets/启动链路.md`）
 - [x] TF tree 图（`cheatsheets/TF-tree.md`）
 - [x] launch 索引（`cheatsheets/launch索引.md`）
 - [x] small-car 映射表（`cheatsheets/small-car-实验映射表.md`）
-- [x] 进度追踪表（`docs/PROGRESS.md`）
 
 ## parallel/ 文件清单
 
@@ -52,7 +51,7 @@
 | `E02-系统组成与认知.md` | 执行 spec（软件拓扑 + 启动链路） |
 | `P1-03-ROS基础7件套.md` | 合并 spec（E03-E09 执行入口） |
 
-> E03-E09 详细笔记已归档至 [`notes/`](./notes/) 目录。
+> E03-E09 笔记模板见 [`notes/README.md`](./notes/README.md)，队员自行撰写。
 
 ### Phase 2 · 底盘 + 机械臂运动学
 | 文件 | 定位 |
