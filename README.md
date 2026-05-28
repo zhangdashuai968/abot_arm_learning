@@ -15,13 +15,16 @@
 
 | 目录 | 用途 | 状态 |
 |---|---|---|
-| `roadmap.md` | 6 阶段总路线图，每阶段目标 / 产出 / 验收 | ✅ 已就绪 |
-| `PROGRESS.md` | 全部实验完成状态追踪（⬜/🔄/✅）、日期、执行人 | ✅ 已创建 |
+| `docs/roadmap.md` | 6 阶段总路线图，每阶段目标 / 产出 / 验收 | ✅ 已就绪 |
+| `docs/PROGRESS.md` | 全部实验完成状态追踪（⬜/🔄/✅）、日期、执行人 | ✅ 已创建 |
+| `docs/ARCHITECTURE.md` | 系统软件架构（节点拓扑+TF树+数据流+坐标系） | ✅ 已创建 |
+| `docs/glossary.md` | 术语表（ROS/机器人学/SLAM/视觉/硬件） | ✅ 已创建 |
+| `docs/WORKFLOW.md` | 跨仓库协作工作流（人类阅读） | ✅ 已创建 |
+| `docs/phase5-6-plan.md` | Phase 5-6 规划骨架 | ✅ 已创建 |
 | `CLAUDE.md` | AI 助手规则（Claude Code 启动时自动读取） | ✅ 已创建 |
-| `WORKFLOW.md` | 团队协作工作流（人类阅读） | ✅ 已创建 |
-| `small-car-实验映射表.md` | abot_arm_learning 实验 → small-car 源码路径映射 | 已移至 `cheatsheets/` |
+| `CONTRIBUTING.md` | 协作约定（Git 流程/文档规范/commit 格式） | ✅ 已创建 |
 | `parallel/` | 独立子任务 spec（E01-E32）+ 合并 spec（P*） | ✅ 20 个文件 |
-| `notes/` | 学习日志（E01-E06）+ 详细笔记（E03-E09） | ✅ 13 个文件 |
+| `notes/` | 学习日志（E01-E06）+ 详细笔记（E03-E09）+ README | ✅ 14 个文件 |
 | `cheatsheets/` | 速查表（启动链路 / TF tree / launch 索引 / 实验映射） | ✅ 已填充 |
 | `.github/` | Issue 模板（bug 报告 + 任务分配） | ✅ 已创建 |
 
@@ -38,7 +41,7 @@
 - [x] TF tree 图（`cheatsheets/TF-tree.md`）
 - [x] launch 索引（`cheatsheets/launch索引.md`）
 - [x] small-car 映射表（`cheatsheets/small-car-实验映射表.md`）
-- [x] 进度追踪表（`PROGRESS.md`）
+- [x] 进度追踪表（`docs/PROGRESS.md`）
 
 ## parallel/ 文件清单
 
@@ -87,7 +90,7 @@
 | Phase 5 | SCI 联动茶园采摘（P5-01~P5-03，任务已定义，spec 待 Phase 4 出口后编写） |
 | Phase 6 | 陆空协同方案（P6-01，spec 待 Phase 5 完成后编写） |
 
-> Phase 5-6 任务编号已在 `PROGRESS.md` 中定义，具体执行 spec 将根据 Phase 4 出口成果编写。
+> Phase 5-6 规划骨架见 [`docs/phase5-6-plan.md`](./docs/phase5-6-plan.md)，具体执行 spec 将根据 Phase 4 出口成果编写。
 
 ## 与 SCI 茶园采摘课题的映射
 
