@@ -1,0 +1,17 @@
+# 统一换行为 LF
+* text=auto eol=lf
+
+# 文档：强制 LF
+*.md  text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# 二进制：不做换行/编码转换
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+
+# 生成物：GitHub 折叠 diff
+*.html linguist-generated=true
